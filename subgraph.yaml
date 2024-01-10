@@ -1,0 +1,23 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ConverterRegistryContract
+    network: imtbl-zkevm-testnet
+    source:
+      address: "0xf594347c24077d8f51380EF42eCB04De3421b47e"
+      abi: ConverterRegistryContract
+      startBlock: 2949650
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ConverterAddition
+      abis:
+        - name: ConverterRegistryContract
+          file: ./abis/ConverterRegistryContract.json
+      blockHandlers:
+        - handler: handleBlock
+      file: ./src/converter-registry-contract.ts
