@@ -4,9 +4,9 @@ schema:
 dataSources:
   - kind: ethereum
     name: ConverterRegistryContract
-    network: imtbl-zkevm-testnet
+    network: xgon
     source:
-      address: "0xf594347c24077d8f51380EF42eCB04De3421b47e"
+      address: "0x61530d6E1c7A47BBB3e48e8b8EdF7569DcFeE121"
       abi: ConverterRegistryContract
       startBlock: 0
     mapping:
