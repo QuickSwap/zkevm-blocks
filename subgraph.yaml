@@ -4,9 +4,9 @@ schema:
 dataSources:
   - kind: ethereum
     name: ConverterRegistryContract
-    network: xgon
+    network: dogechain
     source:
-      address: "0x61530d6E1c7A47BBB3e48e8b8EdF7569DcFeE121"
+      address: "0x1936aa42099648071B723b8adDE1A4212d41A976"
       abi: ConverterRegistryContract
       startBlock: 0
     mapping:
